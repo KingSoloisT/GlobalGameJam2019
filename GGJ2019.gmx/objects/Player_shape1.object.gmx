@@ -26,11 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>//Variables
+
+image_xscale = 0.9;
+image_yscale = 0.9;
+
 dir = 0;
 boost = 0;
 boosterPower = 3;
-maxBoost = 200;
-turnSpeed = 5;
+maxBoost = 150;
+turnSpeed = 6;
 slowSpeed = 0.4;
 canPush = true;
 isMoving = false;
@@ -99,8 +103,8 @@ drawGUI = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_sound_gain(sound4Left,volume,1);
-audio_sound_gain(sound4Right,volume,1);
+            <string>audio_sound_gain(sound4Left,volume4,1);
+audio_sound_gain(sound4Right,volume4,1);
 
 if (instance_exists(home4))
 {
@@ -397,35 +401,35 @@ if (dist &lt;= 300){
 }else{
     volume = 0;
 }
-if (dist2 &lt;= 300){
+if (dist2 &lt;= 500){
     volume2 = 1;
-}else if (dist2 &lt;= 600){
+}else if (dist2 &lt;= 1000){
     volume2 = 0.7;
-}else if (dist2 &lt;= 1200){
+}else if (dist2 &lt;= 2000){
     volume2 = 0.4;
-}else if (dist2 &lt;= 2500){
+}else if (dist2 &lt;= 4000){
     volume2 = 0.1;
 }else{
     volume2 = 0;
 }
-if (dist3 &lt;= 300){
+if (dist3 &lt;= 500){
     volume3 = 1;
-}else if (dist3 &lt;= 600){
+}else if (dist3 &lt;= 1000){
     volume3 = 0.7;
-}else if (dist3 &lt;= 1200){
+}else if (dist3 &lt;= 2000){
     volume3 = 0.4;
-}else if (dist3 &lt;= 2500){
+}else if (dist3 &lt;= 4000){
     volume3 = 0.1;
 }else{
     volume3 = 0;
 }
-if (dist4 &lt;= 300){
+if (dist4 &lt;= 500){
     volume4 = 1;
-}else if (dist4 &lt;= 600){
+}else if (dist4 &lt;= 1000){
     volume4 = 0.7;
-}else if (dist4 &lt;= 1200){
+}else if (dist4 &lt;= 2000){
     volume4 = 0.4;
-}else if (dist4 &lt;= 2500){
+}else if (dist4 &lt;= 4000){
     volume4 = 0.1;
 }else{
     volume4 = 0;
@@ -434,8 +438,8 @@ if (dist4 &lt;= 300){
 //Check if moving
 if (isMoving)
 {
-    audio_sound_gain(sound,0.6,1);
-    audio_play_sound(sound,30,false);
+    audio_sound_gain(fx_shyoush,1,1);
+    audio_play_sound(fx_shyoush,30,false);
     motion_add(dir+90, boost/3);
     moves++;
     boost = 0;
@@ -516,35 +520,6 @@ if (keyboard_check_pressed(vk_space) &amp;&amp; !isMoving)
     pulseX = x;
     pulseY = y;
     alarm[4] = 10;
-}
-
-//Debug Tool
-if (keyboard_check_pressed(vk_enter))
-{
-    show_debug_message("Speed: " + string(speed));
-    show_debug_message("Direction: " + string(dir));
-    show_debug_message("Coordinates: (" + string(x) + ", " + string(y) + ")");
-    show_debug_message("Shape Number: " + string(shapeNum));
-    show_debug_message("Boost: " + string(boost));
-    show_debug_message("Moves: " + string(moves));
-    show_debug_message("Distance to Home: " + string(distance_to_object(home)));
-    show_debug_message("Volumes: 1." + string(volume) + " 2." + string(volume2) + " 3." + string(volume3) + " 4." + string(volume4));
-    show_debug_message("Animation Speed: " + string(image_speed));
-    show_debug_message("Mouse: " + string(mouse_x) + ", " + string(mouse_y));
-    
-}
-
-//Fullscreen
-if (keyboard_check_pressed(ord('F')))
-{
-    if (window_get_fullscreen())
-    {
-        window_set_fullscreen(false);
-    }
-    else
-    {
-        window_set_fullscreen(true);
-    }
 }
 
 //Animations

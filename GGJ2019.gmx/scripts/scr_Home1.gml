@@ -1,6 +1,6 @@
 if (instance_exists(home))
 {
-    if ((position_meeting( home.x, home.y, Player_shape1)) && (sprite_index == spr_shape1) ) 
+    if ((position_meeting( home.x, home.y, Player_shape1)) && (Player_shape1.shapeNum = 1) ) 
     {
         if ((image_angle >= 0) && (image_angle <= 15) || (image_angle >= 345) && (image_angle <= 360)) //0 - facing up
         {
@@ -44,6 +44,8 @@ if (instance_exists(home))
                 else
                 {
                     instance_create(0, 0, obj_FadeOut);
+                    audio_sound_gain(fx_success,0.8,false);
+                    audio_play_sound(fx_success,90,false);
                 }
             }
         }
@@ -58,6 +60,7 @@ if (instance_exists(home))
             
             image_xscale -= 0.05;
             image_yscale -= 0.05;
+            
             //game_end();
             //win or next shape.
             
@@ -87,6 +90,8 @@ if (instance_exists(home))
                 else
                 {
                     instance_create(0, 0, obj_FadeOut);
+                    audio_sound_gain(fx_success,0.8,false);
+                    audio_play_sound(fx_success,90,false);
                 }
             }
         }
@@ -130,6 +135,8 @@ if (instance_exists(home))
                 else
                 {
                     instance_create(0, 0, obj_FadeOut);
+                    audio_sound_gain(fx_success,0.8,false);
+                    audio_play_sound(fx_success,90,false);
                 }
             }
         }
@@ -175,6 +182,8 @@ if (instance_exists(home))
                 else
                 {
                     instance_create(0, 0, obj_FadeOut);
+                    audio_sound_gain(fx_success,0.8,false);
+                    audio_play_sound(fx_success,90,false);
                 }
             }
         }

@@ -1,6 +1,6 @@
 if (instance_exists(home3))
 {
-    if ((position_meeting( home3.x, home3.y, Player_shape1)) && sprite_index == spr_shape3 ) 
+    if ((position_meeting( home3.x, home3.y, Player_shape1)) && Player_shape1.shapeNum = 3) 
     {
         if ((image_angle >= 0) && (image_angle <= 15) || (image_angle >= 345) && (image_angle <= 360))//0 - facing up
         {
@@ -42,6 +42,8 @@ if (instance_exists(home3))
                 else
                 {
                     instance_create(0, 0, obj_FadeOut);
+                    audio_sound_gain(fx_success,0.8,false);
+                    audio_play_sound(fx_success,90,false);
                 }
             }
         }

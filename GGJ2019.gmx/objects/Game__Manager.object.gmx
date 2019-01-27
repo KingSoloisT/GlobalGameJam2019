@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,112 +25,123 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.pulseColor = 0;
-locX = home.x;
-locY = home.y;
-locX2 = home2.x;
-locY2 = home2.y;
-locX3 = home3.x;
-locY3 = home3.y;
-locX4 = home4.x;
-locY4 = home4.y;
-randomize();
-num = irandom_range(1,8)
-switch(num)
+            <string>if (room != LogoRoom)
 {
-    case 1:
-        home.x = locX; home.y = locY;
-        home2.x = locX2; home2.y = locY2;
-        home3.x = locX3; home3.y = locY3;
-        home4.x = locX4; home4.y = locY4;
-        break;
-    case 2:
-        home4.x = locX; home4.y = locY;
-        home.x = locX2; home.y = locY2;
-        home2.x = locX3; home2.y = locY3;
-        home3.x = locX4; home3.y = locY4;
-        break;
-    case 3:
-        home3.x = locX; home3.y = locY;
-        home4.x = locX2; home4.y = locY2;
-        home.x = locX3; home.y = locY3;
-        home2.x = locX4; home2.y = locY4;
-        break;
-    case 4:
-        home2.x = locX; home2.y = locY;
-        home3.x = locX2; home3.y = locY2;
-        home4.x = locX3; home4.y = locY3;
-        home.x = locX4; home.y = locY4;
-        break;
-    case 5:
-        home.x = locX; home.y = locY;
-        home4.x = locX2; home4.y = locY2;
-        home2.x = locX3; home2.y = locY3;
-        home3.x = locX4; home3.y = locY4;
-        break;
-    case 6:
-        home.x = locX; home.y = locY;
-        home3.x = locX2; home3.y = locY2;
-        home4.x = locX3; home4.y = locY3;
-        home2.x = locX4; home2.y = locY4;
-        break;
-    case 7:
-        home3.x = locX; home3.y = locY;
-        home.x = locX2; home.y = locY2;
-        home4.x = locX3; home4.y = locY3;
-        home2.x = locX4; home2.y = locY4;
-        break;
-    case 8:
-        home2.x = locX; home2.y = locY;
-        home3.x = locX2; home3.y = locY2;
-        home.x = locX3; home.y = locY3;
-        home4.x = locX4; home4.y = locY4;
-        break;
-        
-}
-
-for (row = 0; row &lt; 5; row++)
-{
-    for(col = 0; col &lt; 5; col++)
+    global.pulseColor = 0;
+    locX = home.x;
+    locY = home.y;
+    locX2 = home2.x;
+    locY2 = home2.y;
+    locX3 = home3.x;
+    locY3 = home3.y;
+    locX4 = home4.x;
+    locY4 = home4.y;
+    randomize();
+    num = irandom_range(1,8)
+    switch(num)
     {
-        map[row,col] = 0;
+        case 1:
+            home.x = locX; home.y = locY;
+            home2.x = locX2; home2.y = locY2;
+            home3.x = locX3; home3.y = locY3;
+            home4.x = locX4; home4.y = locY4;
+            break;
+        case 2:
+            home4.x = locX; home4.y = locY;
+            home.x = locX2; home.y = locY2;
+            home2.x = locX3; home2.y = locY3;
+            home3.x = locX4; home3.y = locY4;
+            break;
+        case 3:
+            home3.x = locX; home3.y = locY;
+            home4.x = locX2; home4.y = locY2;
+            home.x = locX3; home.y = locY3;
+            home2.x = locX4; home2.y = locY4;
+            break;
+        case 4:
+            home2.x = locX; home2.y = locY;
+            home3.x = locX2; home3.y = locY2;
+            home4.x = locX3; home4.y = locY3;
+            home.x = locX4; home.y = locY4;
+            break;
+        case 5:
+            home.x = locX; home.y = locY;
+            home4.x = locX2; home4.y = locY2;
+            home2.x = locX3; home2.y = locY3;
+            home3.x = locX4; home3.y = locY4;
+            break;
+        case 6:
+            home.x = locX; home.y = locY;
+            home3.x = locX2; home3.y = locY2;
+            home4.x = locX3; home4.y = locY3;
+            home2.x = locX4; home2.y = locY4;
+            break;
+        case 7:
+            home3.x = locX; home3.y = locY;
+            home.x = locX2; home.y = locY2;
+            home4.x = locX3; home4.y = locY3;
+            home2.x = locX4; home2.y = locY4;
+            break;
+        case 8:
+            home2.x = locX; home2.y = locY;
+            home3.x = locX2; home3.y = locY2;
+            home.x = locX3; home.y = locY3;
+            home4.x = locX4; home4.y = locY4;
+            break;
+            
+    }
+    
+    for (row = 0; row &lt; 5; row++)
+    {
+        for(col = 0; col &lt; 5; col++)
+        {
+            map[row,col] = 0;
+        }
+    }
+    
+    //center 800x 450y
+    map[0,0] = MAP_A1
+    //center 2400x 450y
+    map[0,1] = MAP_A2
+    //center 4000x 450y
+    map[0,2] = MAP_A3
+    //center 5600x 450y
+    map[0,3] = MAP_A4
+    
+    //center 800x 1350y
+    map[1,0] = MAP_B1
+    //center 2400x 1350y
+    map[1,1] = MAP_B2
+    //center 4000x 1350y
+    map[1,2] = MAP_B3
+    //center 5600x 1350y
+    map[1,3] = MAP_B4
+    
+    //center 800x 2250y
+    map[2,0] = MAP_C1
+    //center 2400x 2250y
+    map[2,1] = MAP_C2
+    //center 4000x 2250y
+    map[2,2] = MAP_C3
+    //center 5600x 2250y
+    map[2,3] = MAP_C4
+    
+    //center 800x 3150y
+    map[3,0] = MAP_D1
+    //center 2400x 3150y
+    map[3,1] = MAP_D2
+    //center 4000x 3150y
+    map[3,2] = MAP_D3
+    //center 5600x 3150y
+    map[3,3] = MAP_D4
+}
+else
+{
+    if (!window_get_fullscreen())
+    {
+        window_set_fullscreen(true);
     }
 }
-//center 800x 450y
-map[0,0] = MAP_A1
-//center 2400x 450y
-map[0,1] = MAP_A2
-//center 4000x 450y
-map[0,2] = MAP_A3
-//center 5600x 450y
-map[0,3] = MAP_A4
-
-//center 800x 1350y
-map[1,0] = MAP_B1
-//center 2400x 1350y
-map[1,1] = MAP_B2
-//center 4000x 1350y
-map[1,2] = MAP_B3
-//center 5600x 1350y
-map[1,3] = MAP_B4
-
-//center 800x 2250y
-map[2,0] = MAP_C1
-//center 2400x 2250y
-map[2,1] = MAP_C2
-//center 4000x 2250y
-map[2,2] = MAP_C3
-//center 5600x 2250y
-map[2,3] = MAP_C4
-
-//center 800x 3150y
-map[3,0] = MAP_D1
-//center 2400x 3150y
-map[3,1] = MAP_D2
-//center 4000x 3150y
-map[3,2] = MAP_D3
-//center 5600x 3150y
-map[3,3] = MAP_D4
 </string>
           </argument>
         </arguments>
@@ -157,6 +168,18 @@ map[3,3] = MAP_D4
 {
     room_restart();
 }
+
+if (keyboard_check_pressed(ord('F')))
+{
+    if (window_get_fullscreen())
+    {
+        window_set_fullscreen(false);
+    }
+    else
+    {
+        window_set_fullscreen(true);
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -180,44 +203,8 @@ map[3,3] = MAP_D4
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(sng_creepynotcreepy,100,true);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="72">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_sprite_ext(map[0,0],0,800,450,1,1,0,c_white,1);
-draw_sprite_ext(map[0,1],0,2400,450,1,1,0,c_white,1);
-draw_sprite_ext(map[0,2],0,4000,450,1,1,0,c_white,1);
-draw_sprite_ext(map[0,3],0,5600,450,1,1,0,c_white,1);
-draw_sprite_ext(map[1,0],0,800,1350,1,1,0,c_white,1);
-draw_sprite_ext(map[1,1],0,2400,1350,1,1,0,c_white,1);
-draw_sprite_ext(map[1,2],0,4000,1350,1,1,0,c_white,1);
-draw_sprite_ext(map[1,3],0,5600,1350,1,1,0,c_white,1);
-draw_sprite_ext(map[2,0],0,800,2250,1,1,0,c_white,1);
-draw_sprite_ext(map[2,1],0,2400,2250,1,1,0,c_white,1);
-draw_sprite_ext(map[2,2],0,4000,2250,1,1,0,c_white,1);
-draw_sprite_ext(map[2,3],0,5600,2250,1,1,0,c_white,1);
-draw_sprite_ext(map[3,0],0,800,3150,1,1,0,c_white,1);
-draw_sprite_ext(map[3,1],0,2400,3150,1,1,0,c_white,1);
-draw_sprite_ext(map[3,2],0,4000,3150,1,1,0,c_white,1);
-draw_sprite_ext(map[3,3],0,5600,3150,1,1,0,c_white,1);
+
+
 </string>
           </argument>
         </arguments>
