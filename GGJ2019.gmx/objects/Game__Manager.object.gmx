@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room != LogoRoom)
+            <string>if ((room != LogoRoom) &amp;&amp; room != Menu &amp;&amp; room != room_Transition &amp;&amp; room != FinalRoom)
 {
     global.pulseColor = 0;
     locX = home.x;
@@ -135,13 +135,6 @@
     //center 5600x 3150y
     map[3,3] = MAP_D4
 }
-else
-{
-    if (!window_get_fullscreen())
-    {
-        window_set_fullscreen(true);
-    }
-}
 </string>
           </argument>
         </arguments>
@@ -164,11 +157,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(ord("R")))
-{
-    room_restart();
-}
-
+            <string>
 if (keyboard_check_pressed(ord('F')))
 {
     if (window_get_fullscreen())
@@ -204,7 +193,7 @@ if (keyboard_check_pressed(ord('F')))
             <kind>1</kind>
             <string>audio_play_sound(sng_creepynotcreepy,100,true);
 
-
+window_set_fullscreen(true);
 </string>
           </argument>
         </arguments>

@@ -57,6 +57,7 @@
     <instance objName="obj_Menu_StartGame" x="1170" y="740" name="inst_96433C3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Player_shape1" x="288" y="320" name="inst_255630CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="background_colourchange" x="32" y="32" name="inst_27F397B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Game__Manager" x="100" y="60" name="inst_EA55B818" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

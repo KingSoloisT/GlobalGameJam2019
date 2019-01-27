@@ -470,7 +470,7 @@ if (dist4 &lt;= 500){
 //Check if moving
 if (isMoving)
 {
-    audio_sound_gain(fx_shyoush,1,1);
+    audio_sound_gain(fx_shyoush,0.6,1);
     audio_play_sound(fx_shyoush,30,false);
     motion_add(dir+90, boost/3);
     moves++;

@@ -58,7 +58,7 @@
     <instance objName="MAPa4" x="800" y="450" name="inst_1E2F498D" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MAPb1" x="5600" y="1350" name="inst_1D8D3938" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MAPb2" x="4000" y="1350" name="inst_738DBB6D" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="MAPb3" x="2400" y="1344" name="inst_F83D665B" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="MAPb3" x="2400" y="1350" name="inst_F83D665B" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MAPb4" x="800" y="1350" name="inst_4119BD9B" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MAPc1" x="5600" y="2250" name="inst_7AE6846D" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MAPc2" x="4000" y="2250" name="inst_382E3F2F" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>

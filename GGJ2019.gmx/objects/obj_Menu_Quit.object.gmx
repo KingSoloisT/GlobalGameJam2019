@@ -25,11 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(ord("R")))
-{
-    room_restart();
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
