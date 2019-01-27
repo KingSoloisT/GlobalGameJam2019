@@ -146,7 +146,6 @@
     <object>objects\obj_Pause</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\FinalRoom</room>
     <room>rooms\LogoRoom</room>
     <room>rooms\Menu</room>
     <room>rooms\room_Transition</room>
@@ -154,6 +153,7 @@
     <room>rooms\Level_2</room>
     <room>rooms\Level_3</room>
     <room>rooms\Level_4</room>
+    <room>rooms\FinalRoom</room>
     <room>rooms\TestRoom</room>
   </rooms>
   <help>
