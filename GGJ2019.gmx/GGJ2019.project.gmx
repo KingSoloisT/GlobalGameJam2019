@@ -34,6 +34,10 @@
     <sprite>sprites\spr_shape3</sprite>
     <sprite>sprites\spr_shape4</sprite>
     <sprite>sprites\TestWall</sprite>
+    <sprite>sprites\spr_shape1_closed</sprite>
+    <sprite>sprites\spr_shape2_closed</sprite>
+    <sprite>sprites\spr_shape3_closed</sprite>
+    <sprite>sprites\spr_shape4_closed</sprite>
     <sprite>sprites\spr_hex_particle</sprite>
     <sprite>sprites\circleWall</sprite>
     <sprite>sprites\spr_shape4_home</sprite>
