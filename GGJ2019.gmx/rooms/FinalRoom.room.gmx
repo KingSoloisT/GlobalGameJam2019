@@ -12,7 +12,8 @@
   <showcolour>-1</showcolour>
   <code>instance_create(0, 0, obj_FadeIn);
 audio_stop_all();
-audio_play_sound(sng_spoopyocean, 1, 1);</code>
+audio_play_sound(sng_spoopyocean, 1, 1);
+audio_sound_gain(sng_spoopyocean, 1, 1);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
