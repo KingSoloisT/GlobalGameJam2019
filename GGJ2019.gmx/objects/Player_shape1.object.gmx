@@ -346,7 +346,7 @@ switch (shapeNum)
         break;
 }
 
-if (room == 0)
+if (room == Menu)
 {
     if (sprite_index == spr_shape1)
     {

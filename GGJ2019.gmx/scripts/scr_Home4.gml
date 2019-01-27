@@ -7,6 +7,8 @@ if (instance_exists(home4))
             x = home4.x;
             y = home4.y;
             
+            speed = 0;
+            
             show_debug_message("GAME END! Shape 4");
             
             image_xscale -= 0.05;
@@ -30,6 +32,8 @@ if (instance_exists(home4))
         {
             x = home4.x;
             y = home4.y;
+            
+            speed = 0;
             
             show_debug_message("GAME END! Shape 4");
             

@@ -7,6 +7,8 @@ if (instance_exists(Quit2))
             x = Quit2.x;
             y = Quit2.y;
             
+            speed = 0;
+            
             image_xscale -= 0.05;
             image_yscale -= 0.05;
             
@@ -26,6 +28,8 @@ if (instance_exists(Quit2))
         {
             x = Quit2.x;
             y = Quit2.y;
+            
+            speed = 0;
             
             show_debug_message("GAME END! Shape 1");
             
@@ -49,6 +53,8 @@ if (instance_exists(Quit2))
             x = Quit2.x;
             y = Quit2.y;
             
+            speed = 0;
+            
             show_debug_message("GAME END! Shape 1");
             
             image_xscale -= 0.05;
@@ -70,6 +76,8 @@ if (instance_exists(Quit2))
         {
             x = Quit2.x;
             y = Quit2.y;
+            
+            speed = 0;
             
             show_debug_message("GAME END! Shape 1");
             

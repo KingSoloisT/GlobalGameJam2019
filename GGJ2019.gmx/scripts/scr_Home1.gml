@@ -7,6 +7,8 @@ if (instance_exists(home))
             x = home.x;
             y = home.y;
             
+            speed = 0;
+            
             //motion_add(-dir + 90, speed);
             
             //show_debug_message("GAME END! Shape 1");
@@ -18,6 +20,10 @@ if (instance_exists(home))
             
             if (image_xscale <= 0)
             {
+                
+                instance_create(0, 0, obj_FadeOut);
+                
+                /*
                 if room_next(room) != -1
                 {
                     room_goto_next();
@@ -26,12 +32,15 @@ if (instance_exists(home))
                 {
                     room_goto(room);
                 }
+                */
             }
         }
         else if ((image_angle >= 165) && (image_angle <= 195))//180 - facing down
         {
             x = home.x;
             y = home.y;
+            
+            speed = 0;
             
             show_debug_message("GAME END! Shape 1");
             
@@ -57,6 +66,8 @@ if (instance_exists(home))
             x = home.x;
             y = home.y;
             
+            speed = 0;
+            
             show_debug_message("GAME END! Shape 1");
             
             image_xscale -= 0.05;
@@ -80,6 +91,8 @@ if (instance_exists(home))
         {
             x = home.x;
             y = home.y;
+            
+            speed = 0;
             
             show_debug_message("GAME END! Shape 1");
             

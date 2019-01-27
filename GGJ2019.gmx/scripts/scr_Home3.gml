@@ -7,6 +7,8 @@ if (instance_exists(home3))
             x = home3.x;
             y = home3.y;
             
+            speed = 0;
+            
             show_debug_message("GAME END! Shape 3");
             
             image_xscale -= 0.05;

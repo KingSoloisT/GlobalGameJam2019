@@ -9,6 +9,7 @@
       <sound>sound\sng_creepynotcreepy</sound>
       <sound>sound\sng_reallynotcreepy</sound>
       <sound>sound\sng_theme3</sound>
+      <sound>sound\sng_spoopyocean</sound>
     </sounds>
     <sounds name="ag_fx">
       <sound>sound\fx_boong_left</sound>
@@ -48,6 +49,7 @@
     <sprite>sprites\spr_quit</sprite>
     <sprite>sprites\spr_findhome</sprite>
     <sprite>sprites\spr_shh</sprite>
+    <sprite>sprites\sprite41</sprite>
     <sprite>sprites\spr_glow</sprite>
     <sprite>sprites\spr_black</sprite>
     <sprite>sprites\spr_quityes</sprite>
@@ -71,6 +73,7 @@
       <sprite>sprites\MAP_B3</sprite>
       <sprite>sprites\MAP_B4</sprite>
     </sprites>
+    <sprite>sprites\spr_Logo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_main</background>
@@ -126,9 +129,17 @@
       <object>objects\MAPd3</object>
       <object>objects\MAPd4</object>
     </objects>
+    <object>objects\obj_Logo</object>
+    <object>objects\obj_FadeScreen</object>
+    <object>objects\obj_FadeIn</object>
+    <object>objects\obj_FadeOut</object>
+    <object>objects\obj_Shhh</object>
+    <object>objects\obj_Shhh2</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\LogoRoom</room>
     <room>rooms\Menu</room>
+    <room>rooms\room_Transition</room>
     <room>rooms\Level_1</room>
     <room>rooms\TestRoom</room>
   </rooms>

@@ -25,26 +25,33 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Player_shape1.sprite_index == spr_shape1)
+            <string>if (instance_exists(Player_shape1))
 {
-   image_blend = c_orange; 
+    if (Player_shape1.sprite_index == spr_shape1)
+    {
+       image_blend = c_orange; 
+    }
+    
+    
+    if Player_shape1.sprite_index == spr_shape2
+    {
+       image_blend = c_fuchsia; 
+    }
+    
+    
+    if Player_shape1.sprite_index == spr_shape3
+    {
+       image_blend = c_purple; 
+    }
+    
+    if Player_shape1.sprite_index == spr_shape4
+    {
+       image_blend = c_teal; 
+    }
 }
-
-
-if Player_shape1.sprite_index == spr_shape2
+else
 {
-   image_blend = c_fuchsia; 
-}
-
-
-if Player_shape1.sprite_index == spr_shape3
-{
-   image_blend = c_purple; 
-}
-
-if Player_shape1.sprite_index == spr_shape4
-{
-   image_blend = c_teal; 
+    
 }
 </string>
           </argument>

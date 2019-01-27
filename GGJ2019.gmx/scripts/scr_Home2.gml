@@ -7,6 +7,8 @@ if (instance_exists(home2))
             x = home2.x;
             y = home2.y;
             
+            speed = 0;
+            
             show_debug_message("GAME END! Shape 2");
             
             image_xscale -= 0.05;
@@ -31,6 +33,8 @@ if (instance_exists(home2))
         {
             x = home2.x;
             y = home2.y;
+            
+            speed = 0;
             
             show_debug_message("GAME END! Shape 2");
             
