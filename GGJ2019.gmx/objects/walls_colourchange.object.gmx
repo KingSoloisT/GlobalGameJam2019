@@ -25,26 +25,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if Player_shape1.sprite_index = spr_shape1
+            <string>if (Player_shape1.sprite_index == spr_shape1)
 {
-   //circle_wall.image_blend = c_orange; 
+   obj_Menu_Border.image_blend = c_orange; 
 }
 
 
-if Player_shape1.sprite_index = spr_shape2
+if Player_shape1.sprite_index == spr_shape2
 {
-   background_blend = c_green; 
+   obj_Menu_Border.image_blend = c_green; 
 }
 
 
-if Player_shape1.sprite_index = spr_shape3
+if Player_shape1.sprite_index == spr_shape3
 {
-   background_blend = c_maroon; 
+   obj_Menu_Border.image_blend = c_purple; 
 }
 
-if Player_shape1.sprite_index = spr_shape4
+if Player_shape1.sprite_index == spr_shape4
 {
-   background_blend = c_purple; 
+   obj_Menu_Border.image_blend = c_teal; 
 }
 
 </string>
