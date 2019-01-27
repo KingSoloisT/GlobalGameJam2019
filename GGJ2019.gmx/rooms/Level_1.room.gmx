@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>instance_create(0, 0, obj_FadeIn);</code>
+  <code>instance_create(0, 0, obj_FadeIn);
+instance_create(0, 0, obj_Pause);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

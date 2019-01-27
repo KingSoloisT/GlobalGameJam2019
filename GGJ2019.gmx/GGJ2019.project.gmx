@@ -142,6 +142,7 @@
     <object>objects\obj_CreditTransistions</object>
     <object>objects\obj_FadeInText</object>
     <object>objects\obj_Credits</object>
+    <object>objects\obj_Pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\FinalRoom</room>
