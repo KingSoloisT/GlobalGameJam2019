@@ -144,6 +144,8 @@
     <object>objects\obj_FadeInText</object>
     <object>objects\obj_Credits</object>
     <object>objects\obj_Pause</object>
+    <object>objects\obj_yes</object>
+    <object>objects\obj_no</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\LogoRoom</room>
