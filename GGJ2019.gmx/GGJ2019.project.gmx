@@ -9,6 +9,7 @@
       <sound>sound\sng_creepynotcreepy</sound>
       <sound>sound\sng_reallynotcreepy</sound>
       <sound>sound\sng_theme3</sound>
+      <sound>sound\sng_spoopyocean</sound>
     </sounds>
     <sounds name="ag_fx">
       <sound>sound\fx_boong_left</sound>
