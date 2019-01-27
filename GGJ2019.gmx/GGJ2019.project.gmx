@@ -140,6 +140,8 @@
     <object>objects\obj_Shhh2</object>
     <object>objects\obj_HomeCredits</object>
     <object>objects\obj_CreditTransistions</object>
+    <object>objects\obj_FadeInText</object>
+    <object>objects\obj_Credits</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\LogoRoom</room>
@@ -149,8 +151,8 @@
     <room>rooms\Level_2</room>
     <room>rooms\Level_3</room>
     <room>rooms\Level_4</room>
-    <room>rooms\FinalRoom</room>
     <room>rooms\TestRoom</room>
+    <room>rooms\FinalRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -304,23 +304,47 @@ if (room == Menu)
 {
     if (sprite_index == spr_shape1)
     {
-        instance_create(1300, 650, home);
-        instance_create(300, 650, Quit1);
+        if (!instance_exists(home))
+        {
+            instance_create(1300, 650, home);
+        }
+        if (!instance_exists(Quit1))
+        {
+            instance_create(300, 650, Quit1);
+        }
     }
     if (sprite_index == spr_shape2)
     {
-        instance_create(1300, 650, home2);
-        instance_create(300, 650, Quit2);
+        if (!instance_exists(home2))
+        {
+            instance_create(1300, 650, home2);
+        }
+        if (!instance_exists(Quit2))
+        {
+            instance_create(300, 650, Quit2);
+        }
     }
     if (sprite_index == spr_shape3)
     {
-        instance_create(1300, 650, home3);
-        instance_create(300, 650, Quit3);
+        if (!instance_exists(home3))
+        {
+            instance_create(1300, 650, home3);
+        }
+        if (!instance_exists(Quit3))
+        {
+            instance_create(300, 650, Quit3);
+        }
     }
     if (sprite_index == spr_shape4)
     {
-        instance_create(1300, 650, home4);
-        instance_create(300, 650, Quit4);
+        if (!instance_exists(home4))
+        {
+            instance_create(1300, 650, home4);
+        }
+        if (!instance_exists(Quit4))
+        {
+            instance_create(300, 650, Quit4);
+        }
     }
 }
 
@@ -328,23 +352,31 @@ if (room == FinalRoom)
 {
     if (sprite_index == spr_shape1)
     {
-        instance_create(800, 340, home);
-        //instance_create(300, 650, Quit1);
+        if (!instance_exists(home))
+        {
+            instance_create(800, 340, home);
+        }
     }
     if (sprite_index == spr_shape2)
     {
-        instance_create(800, 340, home2);
-        //instance_create(300, 650, Quit2);
+        if (!instance_exists(home2))
+        {
+            instance_create(800, 340, home2);
+        }
     }
     if (sprite_index == spr_shape3)
     {
-        instance_create(800, 340, home3);
-        //instance_create(300, 650, Quit3);
+        if (!instance_exists(home3))
+        {
+            instance_create(800, 340, home3);
+        }
     }
     if (sprite_index == spr_shape4)
     {
-        instance_create(800, 340, home4);
-        //instance_create(300, 650, Quit4);
+        if (!instance_exists(home4))
+        {
+            instance_create(800, 340, home4);
+        }
     }
 }
 </string>
