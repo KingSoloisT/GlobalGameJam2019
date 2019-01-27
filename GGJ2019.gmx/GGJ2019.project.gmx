@@ -74,6 +74,8 @@
       <sprite>sprites\MAP_B4</sprite>
     </sprites>
     <sprite>sprites\spr_Logo</sprite>
+    <sprite>sprites\spr_shape1_closed</sprite>
+    <sprite>sprites\spr_credits</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_main</background>
@@ -142,6 +144,7 @@
     <room>rooms\room_Transition</room>
     <room>rooms\Level_1</room>
     <room>rooms\TestRoom</room>
+    <room>rooms\FinalRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

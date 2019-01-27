@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(Player_shape1))
+            <string>if (instance_exists(Player_shape1)) &amp;&amp; !room = FinalRoom
 {
 
     if Player_shape1.sprite_index = spr_shape1
@@ -54,6 +54,33 @@
 else
 {
     background_blend = c_dkgray;
+}
+
+if room = FinalRoom
+{
+    if Player_shape1.sprite_index = spr_shape1
+    {
+       background_blend = c_purple; 
+    }
+    
+    
+    if Player_shape1.sprite_index = spr_shape2
+    {
+       background_blend = c_navy; 
+    }
+    
+    
+    if Player_shape1.sprite_index = spr_shape3
+    {
+       background_blend = c_green; 
+    }
+    
+    if Player_shape1.sprite_index = spr_shape4
+    {
+       background_blend = c_maroon; 
+    }
+
+
 }
 </string>
           </argument>
