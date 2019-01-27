@@ -33,6 +33,10 @@ if (room == room_Transition)
 {
     depth = -5;
 }
+if (room == FinalRoom)
+{
+    depth = -2;
+}
 </string>
           </argument>
         </arguments>
@@ -152,14 +156,20 @@ if (image_alpha &gt; 1)
     }
     */
     
-    
-    if room_next(room) != -1
+    if (room == FinalRoom)
     {
-        room_goto_next();
+        
     }
     else
     {
-        room_goto(room);
+        if room_next(room) != -1
+        {
+            room_goto_next();
+        }
+        else
+        {
+            room_goto(room);
+        }
     }
 }
 
