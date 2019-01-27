@@ -104,25 +104,13 @@ audio_sound_gain(sound4Right,volume,1);
 
 if (instance_exists(home4))
 {
-    if (home4.x &lt; x-100)
+    if (home4.x &lt; x)
     {
         audio_play_sound(sound4Left,30,false);
     }
     else
     {
         audio_play_sound(sound4Right,30,false);
-    }
-    instance_create(home4.x, home4.y, pulse);
-    pulseX = home4.x;
-    pulseY = home4.y;
-
-    if (home4.x &gt; x+100)
-    {
-        audio_play_sound(sound4Right,30,false);
-    }
-    else
-    {
-        audio_play_sound(sound4,30,false);
     }
     global.pulseColor = 4;
     instance_create(home4.x, home4.y, pulse);
@@ -157,25 +145,13 @@ audio_sound_gain(sound3Right,volume3,1);
 
 if (instance_exists(home3))
 {
-    if (home3.x &lt; -100)
+    if (home3.x &lt; x)
     {
         audio_play_sound(sound3Left,30,false);
     }
     else
     {
         audio_play_sound(sound3Right,30,false);
-    }
-    instance_create(home3.x, home3.y, pulse);
-    pulseX = home3.x;
-    pulseY = home3.y;
-
-    if (home3.x &gt; x+100)
-    {
-        audio_play_sound(sound3Right,30,false);
-    }
-    else
-    {
-        audio_play_sound(sound3,30,false);
     }
     global.pulseColor = 3;
     instance_create(home3.x, home3.y, pulse);
@@ -210,25 +186,13 @@ audio_sound_gain(sound2Right,volume2,1);
 
 if (instance_exists(home2))
 {
-    if (home2.x &lt; x-100)
+    if (home2.x &lt; x)
     {
         audio_play_sound(sound2Left,30,false);
     }
     else
     {
         audio_play_sound(sound2Right,30,false);
-    }
-    instance_create(home2.x, home2.y, pulse);
-    pulseX = home2.x;
-    pulseY = home2.y
-
-    if (home2.x &gt; x+100)
-    {
-        audio_play_sound(sound2Right,30,false);
-    }
-    else
-    {
-        audio_play_sound(sound2,30,false);
     }
     global.pulseColor = 2;
     instance_create(home2.x, home2.y, pulse);
@@ -263,27 +227,13 @@ audio_sound_gain(soundRight,volume,1);
 
 if (instance_exists(home))
 {
-    if (home.x &lt; x-100)
+    if (home.x &lt; x)
     {
         audio_play_sound(soundLeft,30,false);
     }
     else
     {
         audio_play_sound(soundRight,30,false);
-    }
-    
-    instance_create(home.x, home.y, pulse);
-    
-    pulseX = home.x;
-    pulseY = home.y
-
-    if (home.x &gt; x+100)
-    {
-        audio_play_sound(soundRight,30,false);
-    }
-    else
-    {
-        audio_play_sound(sound,30,false);
     }
     global.pulseColor = 1;
     instance_create(home.x, home.y, pulse);
@@ -542,7 +492,7 @@ if (keyboard_check_pressed(vk_space) &amp;&amp; !isMoving)
     {
         case 1:
             audio_sound_gain(sound,0.6,1);
-            audio_play_sound(sound,30,false);
+            audio_play_sound(sound,50,false);
             alarm[3] = 20; alarm[1] = 40; alarm[0] = 60; alarm[2] = 80;
             break;
         case 2:
