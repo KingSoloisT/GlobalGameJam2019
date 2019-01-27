@@ -115,20 +115,21 @@ if (instance_exists(home4))
     instance_create(home4.x, home4.y, pulse);
     pulseX = home4.x;
     pulseY = home4.y;
+
+    if (home4.x &gt; x+100)
+    {
+        audio_play_sound(sound4Right,30,false);
+    }
+    else
+    {
+        audio_play_sound(sound4,30,false);
+    }
+    global.pulseColor = 4;
+    instance_create(home4.x, home4.y, pulse);
+    pulseX = home4.x;
+    pulseY = home4.y
+    alarm[4] = 10;
 }
-else if (home4.x &gt; x+100)
-{
-    audio_play_sound(sound4Right,30,false);
-}
-else
-{
-    audio_play_sound(sound4,30,false);
-}
-global.pulseColor = 4;
-instance_create(home4.x, home4.y, pulse);
-pulseX = home4.x;
-pulseY = home4.y
-alarm[4] = 10;
 </string>
           </argument>
         </arguments>
@@ -153,7 +154,6 @@ alarm[4] = 10;
             <kind>1</kind>
             <string>audio_sound_gain(sound3Left,volume3,1);
 audio_sound_gain(sound3Right,volume3,1);
-if (home3.x &lt; x-100)
 
 if (instance_exists(home3))
 {
@@ -168,20 +168,21 @@ if (instance_exists(home3))
     instance_create(home3.x, home3.y, pulse);
     pulseX = home3.x;
     pulseY = home3.y;
+
+    if (home3.x &gt; x+100)
+    {
+        audio_play_sound(sound3Right,30,false);
+    }
+    else
+    {
+        audio_play_sound(sound3,30,false);
+    }
+    global.pulseColor = 3;
+    instance_create(home3.x, home3.y, pulse);
+    pulseX = home3.x;
+    pulseY = home3.y
+    alarm[4] = 10;
 }
-else if (home3.x &gt; x+100)
-{
-    audio_play_sound(sound3Right,30,false);
-}
-else
-{
-    audio_play_sound(sound3,30,false);
-}
-global.pulseColor = 3;
-instance_create(home3.x, home3.y, pulse);
-pulseX = home3.x;
-pulseY = home3.y
-alarm[4] = 10;
 </string>
           </argument>
         </arguments>
@@ -220,20 +221,21 @@ if (instance_exists(home2))
     instance_create(home2.x, home2.y, pulse);
     pulseX = home2.x;
     pulseY = home2.y
+
+    if (home2.x &gt; x+100)
+    {
+        audio_play_sound(sound2Right,30,false);
+    }
+    else
+    {
+        audio_play_sound(sound2,30,false);
+    }
+    global.pulseColor = 2;
+    instance_create(home2.x, home2.y, pulse);
+    pulseX = home2.x;
+    pulseY = home2.y
+    alarm[4] = 10;
 }
-else if (home4.x &gt; x+100)
-{
-    audio_play_sound(sound2Right,30,false);
-}
-else
-{
-    audio_play_sound(sound2,30,false);
-}
-global.pulseColor = 2;
-instance_create(home2.x, home2.y, pulse);
-pulseX = home2.x;
-pulseY = home2.y
-alarm[4] = 10;
 </string>
           </argument>
         </arguments>
@@ -274,20 +276,21 @@ if (instance_exists(home))
     
     pulseX = home.x;
     pulseY = home.y
+
+    if (home.x &gt; x+100)
+    {
+        audio_play_sound(soundRight,30,false);
+    }
+    else
+    {
+        audio_play_sound(sound,30,false);
+    }
+    global.pulseColor = 1;
+    instance_create(home.x, home.y, pulse);
+    pulseX = home.x;
+    pulseY = home.y
+    alarm[4] = 10;
 }
-else if (home.x &gt; x+100)
-{
-    audio_play_sound(soundRight,30,false);
-}
-else
-{
-    audio_play_sound(sound,30,false);
-}
-global.pulseColor = 1;
-instance_create(home.x, home.y, pulse);
-pulseX = home.x;
-pulseY = home.y
-alarm[4] = 10;
 </string>
           </argument>
         </arguments>

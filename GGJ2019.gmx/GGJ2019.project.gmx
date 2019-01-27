@@ -9,7 +9,6 @@
       <sound>sound\sng_creepynotcreepy</sound>
       <sound>sound\sng_reallynotcreepy</sound>
       <sound>sound\sng_theme3</sound>
-      <sound>sound\sng_spoopyocean</sound>
     </sounds>
     <sounds name="ag_fx">
       <sound>sound\fx_boong_left</sound>
@@ -35,7 +34,6 @@
     <sprite>sprites\spr_shape3</sprite>
     <sprite>sprites\spr_shape4</sprite>
     <sprite>sprites\TestWall</sprite>
-    <sprite>sprites\spr_shape1_closed</sprite>
     <sprite>sprites\spr_shape2_closed</sprite>
     <sprite>sprites\spr_shape3_closed</sprite>
     <sprite>sprites\spr_shape4_closed</sprite>
@@ -55,6 +53,24 @@
     <sprite>sprites\spr_quityes</sprite>
     <sprite>sprites\spr_quitno</sprite>
     <sprite>sprites\spr_menuBorder</sprite>
+    <sprites name="MAP">
+      <sprite>sprites\MAP_C1</sprite>
+      <sprite>sprites\MAP_C2</sprite>
+      <sprite>sprites\MAP_C3</sprite>
+      <sprite>sprites\MAP_C4</sprite>
+      <sprite>sprites\MAP_D1</sprite>
+      <sprite>sprites\MAP_D2</sprite>
+      <sprite>sprites\MAP_D3</sprite>
+      <sprite>sprites\MAP_D4</sprite>
+      <sprite>sprites\MAP_A1</sprite>
+      <sprite>sprites\MAP_A2</sprite>
+      <sprite>sprites\MAP_A3</sprite>
+      <sprite>sprites\MAP_A4</sprite>
+      <sprite>sprites\MAP_B1</sprite>
+      <sprite>sprites\MAP_B2</sprite>
+      <sprite>sprites\MAP_B3</sprite>
+      <sprite>sprites\MAP_B4</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_main</background>
@@ -92,9 +108,28 @@
     <object>objects\obj_Menu_StartGame</object>
     <object>objects\obj_Menu_Controls</object>
     <object>objects\obj_Menu_Listen</object>
+    <objects name="MAP">
+      <object>objects\MAPa1</object>
+      <object>objects\MAPa2</object>
+      <object>objects\MAPa3</object>
+      <object>objects\MAPa4</object>
+      <object>objects\MAPb1</object>
+      <object>objects\MAPb2</object>
+      <object>objects\MAPb3</object>
+      <object>objects\MAPb4</object>
+      <object>objects\MAPc1</object>
+      <object>objects\MAPc2</object>
+      <object>objects\MAPc3</object>
+      <object>objects\MAPc4</object>
+      <object>objects\MAPd1</object>
+      <object>objects\MAPd2</object>
+      <object>objects\MAPd3</object>
+      <object>objects\MAPd4</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
+    <room>rooms\Level_1</room>
     <room>rooms\TestRoom</room>
   </rooms>
   <help>
