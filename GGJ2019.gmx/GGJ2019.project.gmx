@@ -27,6 +27,7 @@
       <sound>sound\fx_fwah</sound>
       <sound>sound\fx_byah</sound>
       <sound>sound\fx_boopboop</sound>
+      <sound>sound\fx_shyoush</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
