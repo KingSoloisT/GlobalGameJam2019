@@ -369,6 +369,30 @@ if (room == Menu)
         instance_create(300, 650, Quit4);
     }
 }
+
+if (room == FinalRoom)
+{
+    if (sprite_index == spr_shape1)
+    {
+        instance_create(800, 340, home);
+        //instance_create(300, 650, Quit1);
+    }
+    if (sprite_index == spr_shape2)
+    {
+        instance_create(800, 340, home2);
+        //instance_create(300, 650, Quit2);
+    }
+    if (sprite_index == spr_shape3)
+    {
+        instance_create(800, 340, home3);
+        //instance_create(300, 650, Quit3);
+    }
+    if (sprite_index == spr_shape4)
+    {
+        instance_create(800, 340, home4);
+        //instance_create(300, 650, Quit4);
+    }
+}
 </string>
           </argument>
         </arguments>

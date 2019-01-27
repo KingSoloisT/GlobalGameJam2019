@@ -20,19 +20,31 @@ if (instance_exists(home))
             
             if (image_xscale <= 0)
             {
-                
-                instance_create(0, 0, obj_FadeOut);
-                
-                /*
-                if room_next(room) != -1
+                if (room == FinalRoom)
                 {
-                    room_goto_next();
+                    if (Player_shape1.sprite_index == spr_shape1)
+                    {
+                        home.sprite_index = spr_shape1_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape2)
+                    {
+                        home2.sprite_index = spr_shape2_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape3)
+                    {
+                        home3.sprite_index = spr_shape3_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape4)
+                    {
+                        home4.sprite_index = spr_shape4_closed;
+                    }
+                    
+                    instance_create(0,0, obj_CreditTransistions);
                 }
                 else
                 {
-                    room_goto(room);
+                    instance_create(0, 0, obj_FadeOut);
                 }
-                */
             }
         }
         else if ((image_angle >= 165) && (image_angle <= 195))//180 - facing down
@@ -51,13 +63,30 @@ if (instance_exists(home))
             
             if (image_xscale <= 0)
             {
-                if room_next(room) != -1
+                if (room == FinalRoom)
                 {
-                    room_goto_next();
+                    if (Player_shape1.sprite_index == spr_shape1)
+                    {
+                        home.sprite_index = spr_shape1_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape2)
+                    {
+                        home2.sprite_index = spr_shape2_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape3)
+                    {
+                        home3.sprite_index = spr_shape3_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape4)
+                    {
+                        home4.sprite_index = spr_shape4_closed;
+                    }
+                    
+                    instance_create(0,0, obj_CreditTransistions);
                 }
                 else
                 {
-                    room_goto(room);
+                    instance_create(0, 0, obj_FadeOut);
                 }
             }
         }
@@ -77,13 +106,30 @@ if (instance_exists(home))
             
             if (image_xscale <= 0)
             {
-                if room_next(room) != -1
+                if (room == FinalRoom)
                 {
-                    room_goto_next();
+                    if (Player_shape1.sprite_index == spr_shape1)
+                    {
+                        home.sprite_index = spr_shape1_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape2)
+                    {
+                        home2.sprite_index = spr_shape2_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape3)
+                    {
+                        home3.sprite_index = spr_shape3_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape4)
+                    {
+                        home4.sprite_index = spr_shape4_closed;
+                    }
+                    
+                    instance_create(0,0, obj_CreditTransistions);
                 }
                 else
                 {
-                    room_goto(room);
+                    instance_create(0, 0, obj_FadeOut);
                 }
             }
         }
@@ -101,15 +147,34 @@ if (instance_exists(home))
             //game_end();
             //win or next shape.
             
+            
+            
             if (image_xscale <= 0)
             {
-                if room_next(room) != -1
+                if (room == FinalRoom)
                 {
-                    room_goto_next();
+                    if (Player_shape1.sprite_index == spr_shape1)
+                    {
+                        home.sprite_index = spr_shape1_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape2)
+                    {
+                        home2.sprite_index = spr_shape2_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape3)
+                    {
+                        home3.sprite_index = spr_shape3_closed;
+                    }
+                    if (Player_shape1.sprite_index == spr_shape4)
+                    {
+                        home4.sprite_index = spr_shape4_closed;
+                    }
+                    
+                    instance_create(0,0, obj_CreditTransistions);
                 }
                 else
                 {
-                    room_goto(room);
+                    instance_create(0, 0, obj_FadeOut);
                 }
             }
         }

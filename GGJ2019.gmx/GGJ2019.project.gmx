@@ -35,6 +35,7 @@
     <sprite>sprites\spr_shape3</sprite>
     <sprite>sprites\spr_shape4</sprite>
     <sprite>sprites\TestWall</sprite>
+    <sprite>sprites\spr_shape1_closed</sprite>
     <sprite>sprites\spr_shape2_closed</sprite>
     <sprite>sprites\spr_shape3_closed</sprite>
     <sprite>sprites\spr_shape4_closed</sprite>
@@ -74,7 +75,6 @@
       <sprite>sprites\MAP_B4</sprite>
     </sprites>
     <sprite>sprites\spr_Logo</sprite>
-    <sprite>sprites\spr_shape1_closed</sprite>
     <sprite>sprites\spr_credits</sprite>
   </sprites>
   <backgrounds name="background">
@@ -137,14 +137,16 @@
     <object>objects\obj_FadeOut</object>
     <object>objects\obj_Shhh</object>
     <object>objects\obj_Shhh2</object>
+    <object>objects\obj_HomeCredits</object>
+    <object>objects\obj_CreditTransistions</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\FinalRoom</room>
     <room>rooms\LogoRoom</room>
     <room>rooms\Menu</room>
     <room>rooms\room_Transition</room>
     <room>rooms\Level_1</room>
     <room>rooms\TestRoom</room>
-    <room>rooms\FinalRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

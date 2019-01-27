@@ -14,6 +14,9 @@ if (instance_exists(Quit1))
             
             if (image_xscale <= 0)
             {
+                instance_create(0, 0, obj_FadeOut);
+                
+                /*
                 if room_next(room) != -1
                 {
                     game_end();
@@ -22,6 +25,7 @@ if (instance_exists(Quit1))
                 {
                     game_end();
                 }
+                */
             }
         }
         else if ((image_angle >= 165) && (image_angle <= 195))//180 - facing down
@@ -38,6 +42,9 @@ if (instance_exists(Quit1))
             
             if (image_xscale <= 0)
             {
+                instance_create(0, 0, obj_FadeOut);
+                
+                /*
                 if room_next(room) != -1
                 {
                     game_end();
@@ -46,6 +53,7 @@ if (instance_exists(Quit1))
                 {
                     game_end();
                 }
+                */
             }
         }
         else if ((image_angle >= 75) && (image_angle <= 105))//90 - facing left
@@ -62,6 +70,9 @@ if (instance_exists(Quit1))
             
             if (image_xscale <= 0)
             {
+                instance_create(0, 0, obj_FadeOut);
+                
+                /*
                 if room_next(room) != -1
                 {
                     game_end();
@@ -70,6 +81,7 @@ if (instance_exists(Quit1))
                 {
                     game_end();
                 }
+                */
             }
         }
         else if ((image_angle >= 255) && (image_angle <= 285))//270 - facing right
@@ -86,6 +98,9 @@ if (instance_exists(Quit1))
             
             if (image_xscale <= 0)
             {
+                instance_create(0, 0, obj_FadeOut);
+                
+                /*
                 if room_next(room) != -1
                 {
                     game_end();
@@ -94,6 +109,7 @@ if (instance_exists(Quit1))
                 {
                     game_end();
                 }
+                */
             }
         }
     }

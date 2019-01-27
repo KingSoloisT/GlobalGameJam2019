@@ -120,6 +120,37 @@ if (image_alpha &gt; 1)
             audio_play_sound(sng_creepynotcreepy, 1, 1);
         }
     }
+    //else 
+    /*
+    if (room == FinalRoom)
+    {
+        //MAKE sprite swaps 
+        if (Player_shape1.sprite_index == spr_shape1)
+        {
+            Quit1.sprite_index = spr_shape1_closed;
+            //instance_create(1300, 650, home);
+            //instance_create(300, 650, Quit1);
+        }
+        if (Player_shape1.sprite_index == spr_shape2)
+        {
+            Quit2.sprite_index = spr_shape2_closed;
+            //instance_create(1300, 650, home2);
+            //instance_create(300, 650, Quit2);
+        }
+        if (Player_shape1.sprite_index == spr_shape3)
+        {
+            Quit3.sprite_index = spr_shape3_closed;
+            //instance_create(1300, 650, home3);
+            //instance_create(300, 650, Quit3);
+        }
+        if (Player_shape1.sprite_index == spr_shape4)
+        {
+            Quit4.sprite_index = spr_shape4_closed;
+            //instance_create(1300, 650, home4);
+            //instance_create(300, 650, Quit4);
+        }
+    }
+    */
     
     
     if room_next(room) != -1
