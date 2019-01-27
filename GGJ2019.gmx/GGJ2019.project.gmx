@@ -11,6 +11,7 @@
       <sound>sound\sng_theme3</sound>
       <sound>sound\sng_spoopyocean</sound>
       <sound>sound\sng_lilcreep</sound>
+      <sound>sound\sng_ambientspoop</sound>
     </sounds>
     <sounds name="ag_fx">
       <sound>sound\fx_boong_left</sound>
