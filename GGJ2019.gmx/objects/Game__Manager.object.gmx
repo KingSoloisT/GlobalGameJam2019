@@ -191,7 +191,7 @@ if (keyboard_check_pressed(ord('F')))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(sng_creepynotcreepy,100,true);
+            <string>//audio_play_sound(sng_creepynotcreepy,100,true);
 
 window_set_fullscreen(true);
 </string>
