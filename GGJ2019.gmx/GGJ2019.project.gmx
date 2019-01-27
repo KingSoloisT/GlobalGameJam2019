@@ -142,11 +142,11 @@
     <object>objects\obj_CreditTransistions</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\FinalRoom</room>
     <room>rooms\LogoRoom</room>
     <room>rooms\Menu</room>
     <room>rooms\room_Transition</room>
     <room>rooms\Level_1</room>
+    <room>rooms\FinalRoom</room>
     <room>rooms\TestRoom</room>
   </rooms>
   <help>

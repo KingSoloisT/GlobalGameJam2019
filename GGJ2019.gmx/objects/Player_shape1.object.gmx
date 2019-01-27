@@ -484,6 +484,8 @@ if (dist4 &lt;= 300){
 //Check if moving
 if (isMoving)
 {
+    audio_sound_gain(sound,0.6,1);
+    audio_play_sound(sound,30,false);
     motion_add(dir+90, boost/3);
     moves++;
     boost = 0;
@@ -539,22 +541,22 @@ if (keyboard_check_pressed(vk_space) &amp;&amp; !isMoving)
     switch(shapeNum)
     {
         case 1:
-            audio_sound_gain(sound,1,1);
+            audio_sound_gain(sound,0.6,1);
             audio_play_sound(sound,30,false);
             alarm[3] = 20; alarm[1] = 40; alarm[0] = 60; alarm[2] = 80;
             break;
         case 2:
-            audio_sound_gain(sound2,1,1);
+            audio_sound_gain(sound2,0.6,1);
             audio_play_sound(sound2,30,false);
             alarm[2] = 20; alarm[1] = 40; alarm[3] = 60; alarm[0] = 80;
             break;
         case 3:
-            audio_sound_gain(sound3,1,1);
+            audio_sound_gain(sound3,0.6,1);
             audio_play_sound(sound3,30,false);
             alarm[1] = 20; alarm[3] = 40; alarm[2] = 60; alarm[0] = 80;
             break;
         case 4:
-            audio_sound_gain(sound4,1,1);
+            audio_sound_gain(sound4,0.6,1);
             audio_play_sound(sound4,30,false);
             alarm[0] = 20; alarm[2] = 40; alarm[1] = 60; alarm[3] = 80;
             break;
