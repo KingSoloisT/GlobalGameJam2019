@@ -68,7 +68,7 @@
     <instance objName="MAPd2" x="2400" y="3150" name="inst_E749EE4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MAPd3" x="4000" y="3150" name="inst_C9A2BFE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MAPd4" x="5600" y="3150" name="inst_0D827761" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Player_shape1" x="5952" y="2656" name="inst_8E92B52A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player_shape1" x="5344" y="2304" name="inst_8E92B52A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="home" x="5376" y="288" name="inst_F5FD7E90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="home2" x="3392" y="224" name="inst_3A605192" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="home3" x="3392" y="2016" name="inst_3606FAC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
