@@ -144,6 +144,7 @@
     <object>objects\obj_Credits</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\FinalRoom</room>
     <room>rooms\LogoRoom</room>
     <room>rooms\Menu</room>
     <room>rooms\room_Transition</room>
@@ -152,7 +153,6 @@
     <room>rooms\Level_3</room>
     <room>rooms\Level_4</room>
     <room>rooms\TestRoom</room>
-    <room>rooms\FinalRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
